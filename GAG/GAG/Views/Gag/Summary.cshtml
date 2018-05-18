@@ -1,0 +1,109 @@
+﻿@model GAG.Models.Gag.GagSummaryModel
+@{
+    Layout = "~/Views/Shared/_twoColumn.cshtml";
+}
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <h1 class="heading-secondary">@Model.GagStatementSummary.Provider.LegalName</h1>
+        <p>UKPRN: @Model.GagStatementSummary.Provider.UkPrn</p>
+        <h1 class="heading-large margin-bottom">Funding for @Model.GagStatementSummary.Period.StartDate to @Model.GagStatementSummary.Period.EndDate </h1>
+        <h3 class="bold-medium">School Funding</h3>
+
+        <p></p>
+
+        @Html.Partial("_SchoolFunding", Model.SchoolFundingModel)
+
+        <div id="wrapper">
+            <main class="group" id="content" role="main">
+                <section>
+
+
+                    <table class="table-collapsible floated-header">
+
+                        <thead>
+                        <tr>
+                            <th class="bold-medium" role="columnheader" scope="col" data-key="department_name">
+                                <a class="bold-medium">Total Allocation </a>
+                            </th>
+
+
+
+                            <th style="text-align: right;" aria-sort="descending" scope="col" data-key="number_of_transactions"><a class="bold-medium" role="button">@Model.GagStatementSummary.FundingStreamResults[0].TotalAmount.ToString("0.##") </a></th>
+                        </tr>
+                        </thead>
+
+                    </table>
+
+
+                </section>
+
+
+            </main>
+        </div>
+    </div>
+
+    <div class="related-container">
+        <aside class="related" id="related">
+            <div class="inner group related-subsection">
+                <h2 id="parent-subsection">General Annual Grant</h2>
+                <nav role="navigation" aria-labelledby="parent-subsection">
+                    <ul>
+                        <li>
+                            <a href="history">Download your statements</a>
+                        </li>
+
+
+
+
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <div class="inner group related-subsection">
+                <h2 id="parent-subsection">ESFA Funding</h2>
+                <nav role="navigation" aria-labelledby="parent-subsection">
+                    <ul>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/pupil-premium-conditions-of-grant-2017-to-2018">National Non Domestic Rates</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/year-7-catch-up-premium-2016-to-2017-allocations">PE and Sport Premium for Primary Schools</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/pupil-premium-conditions-of-grant-2017-to-2018">Pupil Premium</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.uk/government/publications/year-7-catch-up-premium-2016-to-2017-allocations">Universal Infant Free School Meals</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+
+            <br>
+
+
+            <div>
+                <h2 id="parent-subsection">Local Authority Funding</h2>
+                <nav role="navigation" aria-labelledby="parent-subsection">
+                    <ul>
+                        <li>
+                            <a href="#">Early Years</a>
+                        </li>
+                        <li>
+                            <a href="#">High Needs Top Up</a>
+                        </li>
+
+
+
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+
+    </div>
+</div>

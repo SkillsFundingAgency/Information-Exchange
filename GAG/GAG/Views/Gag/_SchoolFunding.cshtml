@@ -1,0 +1,32 @@
+﻿@model GAG.Models.Gag.SchoolFundingModel
+
+<div id="wrapper">
+    <main class="group" id="content" role="main">
+        <section class="filtered-list visualisation-table" id="filtered-list">
+
+
+            <table class="table-collapsible floated-header">
+
+                <thead>
+                    <tr>
+                        <th width="700" class="sentence" role="columnheader" scope="col" data-key="department_name">
+                            <a class="js-sort" role="button">Description</a>
+                        </th>
+
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var allocation in Model.Allocations[0].Allocations)
+                    {
+                        <tr>
+                            <td>@allocation.AllocationLine.AllocationLineName</td>
+                            <td class="table-figures">@allocation.AllocationAmount.ToString("0.##")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</div>

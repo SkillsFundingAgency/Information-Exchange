@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+
+<div>
+    @RenderBody()
+</div>
+<div>
+    @RenderSection("OneThird", required: false)
+</div>

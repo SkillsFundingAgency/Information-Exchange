@@ -1,0 +1,8 @@
+C:\Users\Sumair\Projects\SFA\Website\GAG\InfoEx.Core\bin\Debug\GAG.Core.dll
+C:\Users\Sumair\Projects\SFA\Website\GAG\InfoEx.Core\bin\Debug\GAG.Core.pdb
+C:\Users\Sumair\Projects\SFA\Website\GAG\InfoEx.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sumair\Projects\SFA\Website\GAG\InfoEx.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Sumair\Projects\SFA\Website\GAG\InfoEx.Core\obj\Debug\GAG.Core.csproj.CoreCompileInputs.cache
+C:\Users\Sumair\Projects\SFA\Website\GAG\InfoEx.Core\obj\Debug\GAG.Core.dll
+C:\Users\Sumair\Projects\SFA\Website\GAG\InfoEx.Core\obj\Debug\GAG.Core.pdb
+C:\Users\Sumair\Projects\SFA\Website\GAG\InfoEx.Core\obj\Debug\GAG.Core.csprojResolveAssemblyReference.cache
