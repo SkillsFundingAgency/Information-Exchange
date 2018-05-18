@@ -1,2 +1,0 @@
-C:\Users\Sumair\Projects\SFA\Website\GAG\GAG.Tests\obj\Debug\GAG.Tests.csprojResolveAssemblyReference.cache
-C:\Users\Sumair\Projects\SFA\Website\GAG\GAG.Tests\obj\Debug\GAG.Tests.csproj.CoreCompileInputs.cache
